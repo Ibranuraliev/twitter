@@ -9,11 +9,14 @@ const app = express();
 
 const { Pool } = require('pg');
 const db = new Pool({
-    user: "postgres",
-    password: "qwertyuiop",
-    host: "localhost",
+    user: "twitterdb_n6zr_user",
+    password: "IG5DZlnJwbuvxgrbBeKAEcKflkU7okAq",
+    host: "dpg-cnh9r1q1hbls73css9lg-a.oregon-postgres.render.com",
     port: 5432,
-    database: "ibra"
+    database: "twitterdb_n6zr",
+    ssl: { 
+      rejectUnauthorized: false 
+    }
 });
 
 app.use(bodyParser.json());
