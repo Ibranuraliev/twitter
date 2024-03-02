@@ -295,6 +295,16 @@ app.get('/posts', async (req, res) => {
    }
 })
 
+app.get('/posts/user', async (req, res) => {
+   try {
+      const posts = await db.query('SELECT * FROM posts WHERE user_id = $1', [req.session.user.id])
+      res.json(posts.rows)
+   } catch (error) {
+      console.error(error)
+      res.status(511).json(error)
+   }
+})
+
 app.get('/user/id/:id', async (req, res) => {
    const id = req.params.id;
    try {   

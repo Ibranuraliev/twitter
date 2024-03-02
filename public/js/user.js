@@ -10,7 +10,7 @@ const postsContainer = document.getElementById("post-container")
 
 fetch('/profile').then(response => response.json()).then(user => {
     usernameDisplay.innerText = user.username;
-    fetch('/posts').then(response => response.json()).then(posts => {
+    fetch('/posts/user').then(response => response.json()).then(posts => {
         postsContainer.innerHTML = '';
         posts.forEach(post => {
             fetch(`/user/id/${post.user_id}`).then(response => response.json()).then(postuser => {
