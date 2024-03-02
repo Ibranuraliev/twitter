@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <h1>Twitter</h1>
+                <p><a href="/logout">logout</a></p>
+            </div>
+        </div>
+
+        <!-- Twits -->
+        <div class="add-content">
+            <h1>Twits</h1>
+            <div class="post-container" id="post-container">
+                <div class="post-block">
+                    <p class="post-block-content">Content sadasdasdsadasdads</p>
+                    <p class="post-block-user">by: Ibra</p>
+                    <p class="post-block-user">2024 02 02</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="post-block">
+                    <p class="post-block-content">Content asdasdasdasdasd</p>
+                    <p class="post-block-user">by: Ibra</p>
+                    <p class="post-block-user">2024 02 02</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-content">
+            <h1>Users</h1>
+            <div class="add-content2" id="add-content2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                        <tr>
+                            <td>1</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td><button class="edit-btn" >Edit</button>
+                                <button class="delete-btn" >Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>JohnDoe</td>
+                            <td>johndoe@example.com</td>
+                            <td><button class="edit-btn" >Edit</button>
+                                <button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

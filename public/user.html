@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <h1>Twitter</h1>
+            </div>
+        </div>
+
+        <!-- Main body -->
+        <div class="content" id="content">
+            <div class="user-profile">
+                <img src="materials/IDCUuvSfFJF85Ba7NFHjdFHt6w.webp" class="user-profile-img">
+                <h1 id="usernameDisplay"></h1>
+                <h1><a href="/logout">logout</a></h1>
+            </div>
+            <div class="user-settings">
+                <div class="user-settings-input">
+                    <input type="email" placeholder="name@gmail.com" id="email">
+                    <button id="emailButton">Change</button>
+                </div>
+                <div class="user-settings-input">
+                    <input type="text" placeholder="Username" id="username">
+                    <button id="usernameButton">Change</button>
+                </div>
+                <div class="user-settings-input">
+                    <input type="text" placeholder="8(777)777 77 77" id="phoneNumber">
+                    <button id="phoneNumberButton">Change</button>
+                </div>
+                <div class="user-settings-input">
+                    <input type="text" placeholder="Shymkent" id="city">
+                    <button id="cityButton">Change</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Twits -->
+        <div class="add-content">
+            <h1>Twits</h1>
+            <div class="post-add-container">
+                <input type="text" id="postAddInput" placeholder="Type here">
+                <button id="postAddButton">Add</button>
+            </div>
+            <div class="post-container" id="post-container">
+                <div class="post-block">
+                    <p class="post-block-content">Content sadasdasdsadasdads</p>
+                    <p class="post-block-user">by: Ibra</p>
+                    <p class="post-block-user">2024 02 02</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="post-block">
+                    <p class="post-block-content">Content asdasdasdasdasd</p>
+                    <p class="post-block-user">by: Ibra</p>
+                    <p class="post-block-user">2024 02 02</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/user.js"></script>
+</body>
+</html>
